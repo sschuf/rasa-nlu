@@ -24,3 +24,7 @@ stories:
   - action: utter_encuesta
   - intent: deny
   - action: utter_goodbye
+- story: happy color path
+  steps:
+  - intent: color
+  - action: utter_color

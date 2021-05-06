@@ -19,6 +19,10 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
+- color:
+    use_entities: true
+- resumen:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -40,6 +44,10 @@ responses:
     text: ¿Te sirvió mi respuesta?
   utter_greet:
   - text: Hola! ¿En qué te puedo ayudar?
+  utter_color:
+  - text: Creo que es el azul
+  utter_resumen:
+  - text: Te enviamos el resumen a tu mail!
 actions: []
 forms: {}
 e2e_actions: []
