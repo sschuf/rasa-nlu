@@ -5,49 +5,81 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- mood_great:
-    use_entities: true
-- mood_unhappy:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
 - color:
     use_entities: true
 - resumen:
     use_entities: true
-entities: []
+- despedida:
+    use_entities: true
+- smalltalk__color:
+    use_entities: true
+- consulta:
+    use_entities: true
+- negativo:
+    use_entities: true
+- smalltalk__human:
+    use_entities: true
+- prueba:
+    use_entities: true
+- smalltalk__mood_mal:
+    use_entities: true
+- business__resumen:
+    use_entities: true
+- smalltalk__mood:
+    use_entities: true
+- agradecimiento:
+    use_entities: true
+- positivo:
+    use_entities: true
+- smalltalk__mood_bien:
+    use_entities: true
+- smalltalk__ciudad:
+    use_entities: true
+- saludo:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities:
+- bien
+- ciudad
 slots: {}
 responses:
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
-  utter_encuesta:
-  - buttons:
-    - payload: Si
-      title: Si
-    - payload: No
-      title: No
-    text: ¿Te sirvió mi respuesta?
-  utter_greet:
-  - text: Hola! ¿En qué te puedo ayudar?
-  utter_color:
-  - text: Creo que es el azul
   utter_resumen:
   - text: Te enviamos el resumen a tu mail!
+  utter_saludo:
+  - text: Hola! ¿En qué te puedo ayudar?
+  - text: Buen dia! ¿En qué te puedo ayudar?
+  utter_despedida:
+  - text: Adios
+  - text: Nos vemos!
+  utter_agradecimiento:
+  - text: De nada!
+  - text: Para eso estoy!
+  utter_razon:
+  - text: ¿Por qué?
+  - text: Contame, ¿cuál es el inconveniente?
+  - text: Comentame el inconveniente para ver si puedo resolverlo
+  - text: Quizas pueda ayudarte. ¿Cuál es el problema?
+  utter_mal:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Aca te dejo una imagen para levantar ese ánimo:'
+  utter_bien:
+  - text: Me alegro, seguí así!
+  - text: Que bien!
+  - text: Que bueno!
+  utter_encuesta:
+  - buttons:
+    - payload: si
+      title: Si
+    - payload: no
+      title: No
+    text: ¿Te sirvió mi respuesta?
+  utter_out_of_scope:
+  - text: Lo siento, no logré entender tu consulta. ¿Podríás decirlo de otra manera?
+  utter_consulta:
+  - text: ¿Cuál es tu consulta?
 actions: []
 forms: {}
 e2e_actions: []

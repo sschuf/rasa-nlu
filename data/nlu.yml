@@ -1,91 +1,138 @@
 version: "2.0"
 nlu:
-- intent: greet
+- intent: prueba
   examples: |
+    - test
+    - prueba
+    - algo
+- intent: saludo
+  examples: |
+    - buenas
+    - buen dia
+    - buenas tardes
+    - wenas
+    - hola
+    - holas
+    - holanga
     - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-- intent: goodbye
+- intent: despedida
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-- intent: affirm
+    - nos vemos
+    - hasta luego
+    - que tengas lindo dia
+    - nos veremos
+    - chau
+    - chaucha
+    - nos vimos
+    - adios
+- intent: agradecimiento
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-- intent: deny
+    - gracias
+    - te agradezco
+    - muchas gracias
+    - se agradece
+    - grx
+    - muchísimas gracias
+- intent: positivo
+  examples: |
+    - si
+    - s
+    - por supuesto
+    - mas vale
+    - se
+    - obvio
+    - obviamente
+- intent: negativo
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
+    - nunca
+    - jamas
+    - no me parece
+    - no me gusta
+    - de ninguna manera
+    - para nada
+- intent: consulta
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
+    - una consulta
+    - una pregunta
+    - tengo una consulta
+    - tengo una pregunta
+    - me podes ayudar con algo
+    - necesito ayuda
+- intent: smalltalk__mood
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
+    - como estas
+    - como andas
+    - todo bien
+    - como va todo
+    - que onda
+    - q onda
+- intent: smalltalk__mood_bien
   examples: |
-    - are you a bot?
+    - perfecto
+    - diez puntos
+    - 10 puntos
+    - de 10
+    - me siento un rey
+    - excelente
+    - bien
+    - me siento muy bien
+    - muy [bien](bien)
+    - estoy bien
+    - increible
+    - voy a salvar al mundo
+    - super
+- intent: smalltalk__mood_mal
+  examples: |
+    - horrible
+    - pésimo
+    - triste
+    - no muy bien
+    - mal
+    - bastante mal
+    - muy mal
+    - decepcionado
+    - super triste
+    - super mal
+    - infeliz
+    - estoy muy enojado
+- intent: smalltalk__human
+  examples: |
     - are you a human?
-    - am I talking to a bot?
     - am I talking to a human?
-- intent: color
+- intent: smalltalk__color
   examples: |
-    - color favorito?
-- intent: resumen
+    - cual es tu color favorito
+    - cual es tu color preferido
+    - color preferido
+    - color favorito
+    - color
+- intent: smalltalk__ciudad
   examples: |
+    - [Córdoba](ciudad)
+    - [Buenos Aires](ciudad)
+    - [Mendoza](ciudad)
+    - soy de [córdoba](ciudad)
+- intent: business__resumen
+  examples: |
+    - quiero mi resumen de cuenta
+    - resumen de cta
+    - mi resumen
+    - dónde está mi resumen
+    - ver el resumen
     - resumen de cuenta
+    - resumen
+- intent: out_of_scope
+  examples: |
+    - manzana
+- synonym: bien
+  examples: |
+    - de diez
+    - diez puntos
+    - muy bien
+    - pleno
+    - a pleno
+- regex: dni
+  examples: |
+    - /^\d{8}(?:[-\s]\d{4})?$/

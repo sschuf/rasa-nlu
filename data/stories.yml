@@ -1,30 +1,35 @@
 version: "2.0"
 stories:
-- story: happy path
+- story: consulta
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-- story: sad path 1
+  - intent: negativo
+  - action: utter_consulta
+- story: consulta
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - intent: positivo
+  - action: utter_consulta
+- story: saludo
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: smalltalk__mood_bien
+  - action: utter_bien
+- story: camino feliz mal
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: smalltalk__mood_mal
+  - action: utter_mal
+- story: resumen
+  steps:
+  - intent: business__resumen
+  - action: utter_resumen
   - action: utter_encuesta
-  - intent: affirm
-  - action: utter_happy
-- story: sad path 2
+- story: enojado
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_encuesta
-  - intent: deny
-  - action: utter_goodbye
-- story: happy color path
+  - intent: smalltalk__mood_mal
+  - action: utter_razon
+- story: Story from Conversation ID ca5055899bf04f0a8a3bf9749253408a
   steps:
-  - intent: color
-  - action: utter_color
+  - intent: despedida
+  - action: utter_despedida
