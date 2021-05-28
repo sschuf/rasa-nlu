@@ -2,6 +2,7 @@ language: es
 pipeline:
 - name: WhitespaceTokenizer
 - name: RegexFeaturizer
+- name: RegexEntityExtractor
 - name: LexicalSyntacticFeaturizer
 - name: CountVectorsFeaturizer
   OOV_token: oov

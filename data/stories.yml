@@ -23,8 +23,15 @@ stories:
 - story: resumen
   steps:
   - intent: business__resumen
+  - action: utter_dni1
+  - action: utter_dni2
+  - intent: user_dni
+    entities:
+    - dni
   - action: utter_resumen
   - action: utter_encuesta
+  - action: PAC_FORM
+  - active_loop: PAC_FORM
 - story: enojado
   steps:
   - intent: smalltalk__mood_mal
@@ -33,3 +40,34 @@ stories:
   steps:
   - intent: despedida
   - action: utter_despedida
+- story: charla bien
+  steps:
+  - intent: charlar
+  - action: utter_charla
+  - intent: smalltalk__mood_bien
+  - action: utter_bien
+- story: charla mal
+  steps:
+  - intent: charlar
+  - action: utter_charla
+  - intent: smalltalk__mood_mal
+  - action: utter_mal
+rules:
+- rule: Fallback
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+- rule: Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+- rule: Submit RAC
+  condition:
+  - active_loop: PAC_FORM
+  steps:
+  - action: PAC_FORM
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_submit_rac
+  - action: utter_slots_values

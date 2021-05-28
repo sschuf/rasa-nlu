@@ -116,7 +116,6 @@ nlu:
     - soy de [córdoba](ciudad)
 - intent: business__resumen
   examples: |
-    - quiero mi resumen de cuenta
     - resumen de cta
     - mi resumen
     - dónde está mi resumen
@@ -126,6 +125,18 @@ nlu:
 - intent: out_of_scope
   examples: |
     - manzana
+- intent: charlar
+  examples: |
+    - charlar
+    - conversar
+    - hablemos de algo
+- intent: user_dni
+  examples: |
+    - [41711402](dni)
+    - mi [documento](documento) es [41711402](dni)
+- synonym: documento
+  examples: |
+    - dni
 - synonym: bien
   examples: |
     - de diez
@@ -135,4 +146,4 @@ nlu:
     - a pleno
 - regex: dni
   examples: |
-    - /^\d{8}(?:[-\s]\d{4})?$/
+    - /[0-9]{8}?/g
