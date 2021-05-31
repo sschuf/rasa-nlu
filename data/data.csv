@@ -1,0 +1,6 @@
+user_id,numero_tarjeta,estado_incidente,email
+12345,AABAA,pendiente,s@s.com
+12346,ABAAA,enviado,a@a.com
+12347,ABBBA,rechazada,f@f.com
+12348,ABBBB,pendiente,r@r.com
+12349,ABABA,enviado,g@g.com
