@@ -1,139 +1,23 @@
 version: "2.0"
 nlu:
-- intent: prueba
-  examples: |
-    - test
-    - prueba
-    - algo
 - intent: saludo
   examples: |
-    - buenas
-    - buen dia
-    - buenas tardes
-    - wenas
     - hola
-    - holas
-    - holanga
-    - hey
-- intent: despedida
-  examples: |
-    - nos vemos
-    - hasta luego
-    - que tengas lindo dia
-    - nos veremos
-    - chau
-    - chaucha
-    - nos vimos
-    - adios
-- intent: agradecimiento
-  examples: |
-    - gracias
-    - te agradezco
-    - muchas gracias
-    - se agradece
-    - grx
-    - muchísimas gracias
 - intent: positivo
   examples: |
     - si
-    - s
-    - por supuesto
-    - mas vale
-    - se
-    - obvio
-    - obviamente
-- intent: negativo
+- intent: despedida
   examples: |
-    - no
-    - n
-    - nunca
-    - jamas
-    - no me parece
-    - no me gusta
-    - de ninguna manera
-    - para nada
-- intent: consulta
+    - chau
+- intent: charla/clima
   examples: |
-    - una consulta
-    - una pregunta
-    - tengo una consulta
-    - tengo una pregunta
-    - me podes ayudar con algo
-    - necesito ayuda
-- intent: smalltalk__mood
+    - Cómo está el clima hoy?
+    - Cómo está el clima afuera?
+    - Me gustaría saber cómo está el clima
+- intent: charla/bot
   examples: |
-    - como estas
-    - como andas
-    - todo bien
-    - como va todo
-    - que onda
-    - q onda
-- intent: smalltalk__mood_bien
-  examples: |
-    - perfecto
-    - diez puntos
-    - 10 puntos
-    - de 10
-    - me siento un rey
-    - excelente
-    - bien
-    - me siento muy bien
-    - muy [bien](bien)
-    - estoy bien
-    - increible
-    - voy a salvar al mundo
-    - super
-- intent: smalltalk__mood_mal
-  examples: |
-    - horrible
-    - pésimo
-    - triste
-    - no muy bien
-    - mal
-    - bastante mal
-    - muy mal
-    - decepcionado
-    - super triste
-    - super mal
-    - infeliz
-    - estoy muy enojado
-- intent: smalltalk__human
-  examples: |
-    - are you a human?
-    - am I talking to a human?
-- intent: smalltalk__color
-  examples: |
-    - cual es tu color favorito
-    - cual es tu color preferido
-    - color preferido
-    - color favorito
-    - color
-- intent: smalltalk__ciudad
-  examples: |
-    - [Córdoba](ciudad)
-    - [Buenos Aires](ciudad)
-    - [Mendoza](ciudad)
-    - soy de [córdoba](ciudad)
-- intent: business__resumen
-  examples: |
-    - resumen de cta
-    - mi resumen
-    - dónde está mi resumen
-    - ver el resumen
-    - resumen de cuenta
-    - resumen
-- intent: out_of_scope
-  examples: |
-    - manzana
-- intent: charlar
-  examples: |
-    - charlar
-    - conversar
-    - hablemos de algo
-- intent: user_dni
-  examples: |
-    - [41711402](dni)
-    - mi [documento](documento) es [41711402](dni)
+    - Sos humano?
+    - Sos real?
 - synonym: documento
   examples: |
     - dni

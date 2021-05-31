@@ -15,21 +15,11 @@ pipeline:
   epochs: 200
   ranking_length: 5
 - name: DucklingEntityExtractor
-  dimensions:
-  - email
-  - number
-  - amount-of-money
+  url: http://duckling:8000
+  dimensions: null
 - name: EntitySynonymMapper
 - name: ResponseSelector
-  retrieval_intent: out_of_scope
-  scale_loss: false
-  epochs: 100
-- name: ResponseSelector
-  retrieval_intent: faq
-  scale_loss: false
-  epochs: 100
-- name: ResponseSelector
-  retrieval_intent: chitchat
+  retrieval_intent: charla
   scale_loss: false
   epochs: 100
 - name: FallbackClassifier
