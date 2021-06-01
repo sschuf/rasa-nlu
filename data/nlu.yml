@@ -25,6 +25,9 @@ nlu:
   examples: |
     - estado de incidente
     - estado de incidencia
+- intent: informar
+  examples: |
+    - 12345
 - synonym: documento
   examples: |
     - dni

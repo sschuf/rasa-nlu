@@ -10,3 +10,7 @@ stories:
   - action: utter_preguntar_numero
   - intent: informar
   - action: action_incident_status
+- story: Health Test
+  steps:
+  - intent: test
+  - action: action_health_test
