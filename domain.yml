@@ -41,6 +41,13 @@ responses:
   - text: Por el momento soy solo un simple bot
   utter_preguntar_numero:
   - text: ¿Cómo es tu número de usuario?
+  utter_test:
+  - buttons:
+    - payload: si
+      title: si
+    - payload: no
+      title: no
+    text: Esto es una prueba
 actions:
 - action_incident_status
 - action_health_test
