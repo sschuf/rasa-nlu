@@ -40,4 +40,4 @@ nlu:
     - a pleno
 - regex: dni
   examples: |
-    - /[0-9]{8}?/g
+    - /^\d{8}$/g
