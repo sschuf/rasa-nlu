@@ -4,3 +4,7 @@ rules:
   steps:
   - intent: charla
   - action: utter_charla
+- rule: Test Health
+  steps:
+  - intent: test
+  - action: action_health_test

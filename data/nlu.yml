@@ -18,6 +18,13 @@ nlu:
   examples: |
     - Sos humano?
     - Sos real?
+- intent: test
+  examples: |
+    - test
+- intent: estado_incidente
+  examples: |
+    - estado de incidente
+    - estado de incidencia
 - synonym: documento
   examples: |
     - dni

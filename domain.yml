@@ -13,6 +13,12 @@ intents:
     use_entities: true
 - charla:
     use_entities: true
+- estado_incidente:
+    use_entities: true
+- informar:
+    use_entities: true
+- test:
+    use_entities: true
 entities: []
 slots:
   username:
@@ -27,6 +33,10 @@ responses:
   - text: No soy un bot de clima.. Pero espero que esté soleado afuera
   utter_charla/bot:
   - text: Por el momento soy solo un simple bot
-actions: []
+  utter_preguntar_numero:
+  - text: ¿Cómo es tu número de usuario?
+actions:
+- action_incident_status
+- action_health_test
 forms: {}
 e2e_actions: []
