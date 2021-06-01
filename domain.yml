@@ -19,9 +19,10 @@ intents:
     use_entities: true
 - test:
     use_entities: true
-entities: []
+entities:
+- numero
 slots:
-  number:
+  numero:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true
