@@ -17,7 +17,7 @@ pipeline:
 - name: DucklingEntityExtractor
   url: http://duckling:8000
   dimensions:
-  - number
+  - numero
 - name: EntitySynonymMapper
 - name: ResponseSelector
   retrieval_intent: charla
