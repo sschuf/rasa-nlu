@@ -25,9 +25,9 @@ nlu:
   examples: |
     - estado de incidente
     - estado de incidencia
-- intent: informar
+- intent: info_dni
   examples: |
-    - [12345](numero)
+    - [23456789](dni)
 - synonym: documento
   examples: |
     - dni

@@ -8,9 +8,9 @@ stories:
   steps:
   - intent: estado_incidente
   - action: utter_preguntar_numero
-  - intent: informar
+  - intent: info_dni
     entities:
-    - numero
+    - dni
   - action: action_incident_status
 - story: Health Test
   steps:

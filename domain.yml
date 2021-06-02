@@ -15,14 +15,14 @@ intents:
     use_entities: true
 - estado_incidente:
     use_entities: true
-- informar:
-    use_entities: true
 - test:
     use_entities: true
+- info_dni:
+    use_entities: true
 entities:
-- numero
+- dni
 slots:
-  numero:
+  dni:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true
