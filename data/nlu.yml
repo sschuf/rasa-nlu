@@ -28,6 +28,9 @@ nlu:
 - intent: info_dni
   examples: |
     - [23456789](dni)
+- intent: servicios_tracking
+  examples: |
+    - dónde está mi tarjeta
 - synonym: documento
   examples: |
     - dni

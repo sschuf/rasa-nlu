@@ -11,9 +11,17 @@ stories:
   - intent: info_dni
     entities:
     - dni
-  - action: action_incident_status
+  - action: action_service_tracking
 - story: Health Test
   steps:
   - intent: test
   - action: utter_test
   - action: action_health_test
+- story: Servicios/Tracking
+  steps:
+  - intent: servicios_tracking
+  - action: utter_solicitar_dni
+  - intent: info_dni
+    entities:
+    - dni: ''
+  - action: action_service_tracking

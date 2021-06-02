@@ -5,6 +5,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- servicios_tracking:
+    use_entities: true
 - saludo:
     use_entities: true
 - despedida:
@@ -29,7 +31,12 @@ slots:
     influence_conversation: false
   username:
     type: rasa.shared.core.slots.AnySlot
-    initial_value: username
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  email:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
     auto_fill: true
     influence_conversation: false
 responses:
@@ -48,8 +55,11 @@ responses:
     - payload: no
       title: no
     text: Esto es una prueba
+  utter_solicitar_dni:
+  - text: Por favor, indicame tu DNI
+  - text: Decime tu DNI sin espaciosn ni puntos. Por ej. 28444444
 actions:
-- action_incident_status
+- action_service_tracking
 - action_health_test
 forms: {}
 e2e_actions: []
