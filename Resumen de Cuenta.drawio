@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" modified="2021-06-01T22:11:40.076Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="XEoNQawgvWhgU8dkLk8N" version="14.7.2" type="github">
-  <diagram id="STw_41gi9h3a2NrgZt3Z" name="Page-1">
+<mxfile host="app.diagrams.net" modified="2021-06-02T16:04:06.671Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="yvtYN0c8gx5eL3tAkFET" version="14.7.2" type="github">
+  <diagram id="STw_41gi9h3a2NrgZt3Z" name="Intenciones">
     <mxGraphModel dx="2249" dy="833" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -173,8 +173,14 @@
         <mxCell id="JrEHm9Qh_ha4KLBkT9_c-1" value="Solicitud de tarjeta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-380" y="180" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="JrEHm9Qh_ha4KLBkT9_c-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JrEHm9Qh_ha4KLBkT9_c-3" target="JrEHm9Qh_ha4KLBkT9_c-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="JrEHm9Qh_ha4KLBkT9_c-3" value="¡Qué bueno que quieras tu Naranja! Completá tu solicitud acá https://bit.ly/QuieroMiNaranja y en el momento te contamos si la podés tener." style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="-460" y="320" width="280" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="JrEHm9Qh_ha4KLBkT9_c-5" value="PAC" style="shape=tape;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="590" width="120" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
