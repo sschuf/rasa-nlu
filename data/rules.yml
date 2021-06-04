@@ -9,3 +9,7 @@ rules:
   - intent: test
   - action: utter_test
   - action: action_health_test
+- rule: Manejar Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_no_entendido

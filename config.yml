@@ -24,7 +24,7 @@ pipeline:
   scale_loss: false
   epochs: 100
 - name: FallbackClassifier
-  threshold: 0.9
+  threshold: 0.95
 policies:
 - name: TEDPolicy
   max_history: 10

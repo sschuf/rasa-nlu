@@ -23,6 +23,8 @@ intents:
     use_entities: true
 - negativo:
     use_entities: true
+- nlu_fallback:
+    use_entities: true
 entities:
 - dni
 slots:
@@ -84,6 +86,8 @@ responses:
   - text: Perfecto! Te transfiero con un agente para continuar tu consulta.
   utter_ayuda:
   - text: Contame, ¿en qué te puedo ayudar?
+  utter_no_entendido:
+  - text: No logré entender tu consulta. ¿Podrías decirlo con otras palabras, por favor?
 actions:
 - action_service_tracking
 - action_health_test
