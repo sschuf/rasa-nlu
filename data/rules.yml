@@ -12,3 +12,7 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_no_entendido
+- rule: Untitled Rule
+  steps:
+  - intent: reset
+  - action: action_reset

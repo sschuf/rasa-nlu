@@ -33,7 +33,7 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: false
-  username:
+  nombre:
     type: rasa.shared.core.slots.AnySlot
     initial_value: null
     auto_fill: true

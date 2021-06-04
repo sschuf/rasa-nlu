@@ -33,6 +33,12 @@ nlu:
 - intent: charla_hora
   examples: |
     - Decime la hora
+- intent: reset
+  examples: |
+    - reset
+- intent: servicios_resumen
+  examples: |
+    - Resumen de cuenta
 - regex: dni
   examples: |
     - /^\d{8}$/g
