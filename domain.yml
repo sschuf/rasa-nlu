@@ -15,8 +15,6 @@ intents:
     use_entities: true
 - charla:
     use_entities: true
-- estado_incidente:
-    use_entities: true
 - test:
     use_entities: true
 - info_dni:
@@ -50,13 +48,6 @@ responses:
   - text: No soy un bot de clima.. Pero espero que esté soleado afuera
   utter_charla/bot:
   - text: Por el momento soy solo un simple bot
-  utter_test:
-  - buttons:
-    - payload: si
-      title: si
-    - payload: no
-      title: no
-    text: Esto es una prueba
   utter_solicitar_dni:
   - text: Por favor, indicame tu DNI
   - text: Decime tu DNI sin espacios ni puntos. Por ej. 28444444
