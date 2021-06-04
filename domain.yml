@@ -79,7 +79,7 @@ responses:
       title: No
     text: ¿Te pongo en contacto con uno de mis compañeros para continuar con tu consulta?
   utter_algo_mas:
-  - text: ¿Te puedo ayudar en algo más?
+  - text: ¿Tenes otra consulta?
   utter_no_transferir:
   - text: No hay problema. ¿Me indicas tu consulta? Quizas ahora la pueda responder
   utter_si_transferir:
