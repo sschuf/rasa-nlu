@@ -80,5 +80,6 @@ responses:
 actions:
 - action_service_tracking
 - action_health_test
+- action_show_time
 forms: {}
 e2e_actions: []

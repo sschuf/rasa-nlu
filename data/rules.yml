@@ -7,7 +7,6 @@ rules:
 - rule: Test Health
   steps:
   - intent: test
-  - action: utter_test
   - action: action_health_test
 - rule: Manejar Fallback
   steps:

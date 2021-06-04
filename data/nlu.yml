@@ -30,6 +30,9 @@ nlu:
 - intent: negativo
   examples: |
     - No
+- intent: '&hora'
+  examples: |
+    - Decime la hora
 - regex: dni
   examples: |
     - /^\d{8}$/g

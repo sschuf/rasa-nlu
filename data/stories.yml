@@ -4,11 +4,6 @@ stories:
   steps:
   - intent: saludo
   - action: utter_saludo
-- story: Health Test
-  steps:
-  - intent: test
-  - action: utter_test
-  - action: action_health_test
 - story: Servicios/Tracking
   steps:
   - intent: servicios_tracking
@@ -46,3 +41,6 @@ stories:
   - action: utter_algo_mas
   - intent: positivo
   - action: utter_ayuda
+- story: Charla / Hola
+  steps:
+  - action: action_show_time
