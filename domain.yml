@@ -50,8 +50,6 @@ responses:
   - text: No soy un bot de clima.. Pero espero que esté soleado afuera
   utter_charla/bot:
   - text: Por el momento soy solo un simple bot
-  utter_preguntar_numero:
-  - text: ¿Cómo es tu número de usuario?
   utter_test:
   - buttons:
     - payload: si

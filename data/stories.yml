@@ -4,14 +4,6 @@ stories:
   steps:
   - intent: saludo
   - action: utter_saludo
-- story: Estado Incidente
-  steps:
-  - intent: estado_incidente
-  - action: utter_preguntar_numero
-  - intent: info_dni
-    entities:
-    - dni: ''
-  - action: action_service_tracking
 - story: Health Test
   steps:
   - intent: test

@@ -21,10 +21,6 @@ nlu:
 - intent: test
   examples: |
     - test
-- intent: estado_incidente
-  examples: |
-    - estado de incidente
-    - estado de incidencia
 - intent: info_dni
   examples: |
     - [23456789](dni)
@@ -34,16 +30,6 @@ nlu:
 - intent: negativo
   examples: |
     - No
-- synonym: documento
-  examples: |
-    - dni
-- synonym: bien
-  examples: |
-    - de diez
-    - diez puntos
-    - muy bien
-    - pleno
-    - a pleno
 - regex: dni
   examples: |
     - /^\d{8}$/g
