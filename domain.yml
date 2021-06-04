@@ -82,6 +82,8 @@ responses:
   - text: No hay problema. ¿Me indicas tu consulta? Quizas ahora la pueda responder
   utter_si_transferir:
   - text: Perfecto! Te transfiero con un agente para continuar tu consulta.
+  utter_ayuda:
+  - text: Contame, ¿en qué te puedo ayudar?
 actions:
 - action_service_tracking
 - action_health_test

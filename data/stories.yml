@@ -46,3 +46,11 @@ stories:
   - action: utter_encuesta_no
   - intent: positivo
   - action: utter_si_transferir
+- story: PAC positivo
+  steps:
+  - action: utter_encuesta
+  - intent: positivo
+  - action: utter_encuesta_si
+  - action: utter_algo_mas
+  - intent: positivo
+  - action: utter_ayuda
