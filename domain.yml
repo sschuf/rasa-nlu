@@ -23,6 +23,8 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
+- charla_hora:
+    use_entities: true
 entities:
 - dni
 slots:
