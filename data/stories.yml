@@ -10,7 +10,7 @@ stories:
   - action: utter_preguntar_numero
   - intent: info_dni
     entities:
-    - dni
+    - dni: ''
   - action: action_service_tracking
 - story: Health Test
   steps:
@@ -25,3 +25,24 @@ stories:
     entities:
     - dni: ''
   - action: action_service_tracking
+  - action: utter_encuesta
+- story: PAC positivo
+  steps:
+  - action: utter_encuesta
+  - intent: positivo
+  - action: utter_encuesta_si
+  - action: utter_algo_mas
+- story: PAC negativo - no transferir
+  steps:
+  - action: utter_encuesta
+  - intent: negativo
+  - action: utter_encuesta_no
+  - intent: negativo
+  - action: utter_no_transferir
+- story: PAC negativo - transferir
+  steps:
+  - action: utter_encuesta
+  - intent: negativo
+  - action: utter_encuesta_no
+  - intent: positivo
+  - action: utter_si_transferir

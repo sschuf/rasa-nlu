@@ -21,6 +21,8 @@ intents:
     use_entities: true
 - info_dni:
     use_entities: true
+- negativo:
+    use_entities: true
 entities:
 - dni
 slots:
@@ -57,7 +59,29 @@ responses:
     text: Esto es una prueba
   utter_solicitar_dni:
   - text: Por favor, indicame tu DNI
-  - text: Decime tu DNI sin espaciosn ni puntos. Por ej. 28444444
+  - text: Decime tu DNI sin espacios ni puntos. Por ej. 28444444
+  utter_encuesta:
+  - buttons:
+    - payload: /positivo
+      title: Si
+    - payload: /negativo
+      title: No
+    text: ¿Te sirvió mi respuesta?
+  utter_encuesta_si:
+  - text: ¡Qué bueno poder ayudarte!
+  utter_encuesta_no:
+  - buttons:
+    - payload: /positivo
+      title: Si
+    - payload: /negativo
+      title: No
+    text: ¿Te pongo en contacto con uno de mis compañeros para continuar con tu consulta?
+  utter_algo_mas:
+  - text: ¿Te puedo ayudar en algo más?
+  utter_no_transferir:
+  - text: No hay problema. ¿Me indicas tu consulta? Quizas ahora la pueda responder
+  utter_si_transferir:
+  - text: Perfecto! Te transfiero con un agente para continuar tu consulta.
 actions:
 - action_service_tracking
 - action_health_test

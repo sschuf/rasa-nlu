@@ -31,6 +31,9 @@ nlu:
 - intent: servicios_tracking
   examples: |
     - dónde está mi tarjeta
+- intent: negativo
+  examples: |
+    - No
 - synonym: documento
   examples: |
     - dni
