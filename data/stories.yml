@@ -45,3 +45,7 @@ stories:
   steps:
   - intent: charla_hora
   - action: action_show_time
+- story: Despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
