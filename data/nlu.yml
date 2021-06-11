@@ -39,6 +39,9 @@ nlu:
 - intent: servicios_resumen
   examples: |
     - Resumen de cuenta
+- intent: servicios_promociones
+  examples: |
+    - promociones
 - regex: dni
   examples: |
     - /^\d{8}$/g

@@ -4,7 +4,7 @@ stories:
   steps:
   - intent: saludo
   - action: utter_saludo
-- story: Servicios/Tracking
+- story: Servicios / Tracking
   steps:
   - intent: servicios_tracking
   - action: utter_solicitar_dni
@@ -13,12 +13,14 @@ stories:
     - dni: ''
   - action: action_service_tracking
   - action: utter_encuesta
-- story: PAC positivo
+- story: PAC positivo - algo mas
   steps:
   - action: utter_encuesta
   - intent: positivo
   - action: utter_encuesta_si
   - action: utter_algo_mas
+  - intent: positivo
+  - action: utter_consulta
 - story: PAC negativo - no transferir
   steps:
   - action: utter_encuesta
@@ -41,7 +43,7 @@ stories:
   - action: utter_algo_mas
   - intent: positivo
   - action: utter_ayuda
-- story: Untitled Story
+- story: Extras / Decir Hora
   steps:
   - intent: charla_hora
   - action: action_show_time
@@ -49,3 +51,17 @@ stories:
   steps:
   - intent: despedida
   - action: utter_despedida
+- story: PAC positivo - nada mas
+  steps:
+  - action: utter_encuesta
+  - intent: positivo
+  - action: utter_encuesta_si
+  - action: utter_algo_mas
+  - intent: negativo
+  - action: utter_espera
+- story: Servicios / Promociones
+  steps:
+  - intent: promociones
+  - action: utter_servicio_promociones_1
+  - action: utter_servicio_promociones_2
+  - action: utter_encuesta

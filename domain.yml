@@ -25,6 +25,12 @@ intents:
     use_entities: true
 - charla_hora:
     use_entities: true
+- reset:
+    use_entities: true
+- servicios_resumen:
+    use_entities: true
+- servicios_promociones:
+    use_entities: true
 entities:
 - dni
 slots:
@@ -81,9 +87,19 @@ responses:
   - text: No logré entender tu consulta. ¿Podrías decirlo con otras palabras, por favor?
   utter_despedida:
   - text: Hasta luego {nombre}! {email}
+  utter_consulta:
+  - text: Comentame, ¿en qué te puedo ayudar?
+  - text: Decime, ¿en qué te puedo ayudar?
+  utter_espera:
+  - text: Gracias por escribir, sigo acá para lo que necesites. ¡Un abrazo!
+  utter_servicio_promociones_1:
+  - text: Conocé todos los beneficios que tenés en cada rubro con Naranja en s.naranja.com/PromosNaranja
+  utter_servicio_promociones_2:
+  - text: Allí también podés filtrar por provincia y localidad, para ir al comercio que te quede más cómodo según el domicilio.
 actions:
 - action_service_tracking
 - action_health_test
 - action_show_time
+- action_reset
 forms: {}
 e2e_actions: []
